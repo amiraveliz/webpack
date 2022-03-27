@@ -36,10 +36,14 @@ module.exports = (env, argv) => {
     module: { rules },
     plugins: [new HtmlWebpackPlugin({ template: "src/index.html" })],
     devServer: {
-      open: true,
       port: 3000,
       compress: true,
     },
     devtool: "source-map",
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, "src/components"),
+      },
+    },
   };
 };

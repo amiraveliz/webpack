@@ -1,3 +1,7 @@
-const App = () => <h1>Hello world</h1>;
+const App = () => (
+  <div>
+    <h1>Hello world</h1>
+  </div>
+);
 
 export default App;

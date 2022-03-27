@@ -24,4 +24,11 @@ module.exports = {
     "react/jsx-filename-extension": RULES.OFF,
     "react/function-component-definition": RULES.OFF,
   },
+  settings: {
+    "import/resolver": {
+      node: {
+        moduleDirectory: ["node_modules", "src/"],
+      },
+    },
+  },
 };
